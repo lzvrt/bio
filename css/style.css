@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300;500&display=swap');
+
+/*Main css*/
+
+body {
+    font-family: 'Playpen Sans', cursive; 
+    padding: 0;
+    margin: 0;
+}
+.video-bg {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.video-bg video {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 1;
+}
+.effects {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.500);
+}
+.video-bg__content { /*Main text*/
+    z-index: 2;
+    font-size: 115%;
+    max-width: 130%;
+    text-align: center;
+    color: aliceblue;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    padding-left: 2%;
+    padding-right: 2%;
+    background: rgba(0, 0, 0, 0.212);
+    border: 2px solid rgb(240, 248, 255); 
+    border-radius: 40px; 
+    box-shadow: 0px 0px 20px #ffffff;
+    
+}
+.fa-telegram { /*Button Telegram*/
+    z-index: 2;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%;
+    top: 74%;
+    background: rgba(0, 0, 0, 0.212);
+    padding: 16px 16px;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    border: 2px solid white;
+    border-radius: 40px;
+    border-color: rgb(171, 192, 185);
+    box-shadow: 0px 0px 20px #ffffff;
+  }
+  .fa-telegram:hover {
+  background: rgb(255, 255, 255,0.322);
+  }
+  .fa-steam { /*Button Steam*/
+    z-index: 2;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    left: 57%;
+    top: 74%;
+    background: rgba(0, 0, 0, 0.212);
+    padding: 16px 16px;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    border: 2px solid white;
+    border-radius: 40px;
+    border-color: rgb(171, 192, 185);
+    box-shadow: 0px 0px 20px #ffffff;
+  }
+  .fa-steam:hover {
+    background: rgb(255, 255, 255,0.322);
+    }
+  .fa-vk { /*Button VK*/
+    z-index: 2;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    left: 43%;
+    top: 74%;
+    background: rgba(0, 0, 0, 0.212);
+    padding: 16px 16px;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    border: 2px solid white;
+    border-radius: 40px;
+    border-color: rgb(171, 192, 185);
+    box-shadow: 0px 0px 20px #ffffff;
+  }
+  .fa-vk:hover {
+    background: rgb(255, 255, 255,0.322);
+    }
+
+    /*Device adaptation*/
+
+@media screen and (max-width: 1200px) {
+  .video-bg__content {
+    font-size: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .video-bg__content {
+    font-size: 70%;
+  }
+  .fa-telegram {
+    left: 50%;
+    top: 74%;
+  }
+  .fa-steam {
+    left: 60%;
+    top: 74%;
+  }
+  .fa-vk {
+    left: 40%;
+    top: 74%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .video-bg__content {
+    font-size: 80%;
+  }
+  .fa-telegram {
+    left: 50%;
+    top: 74%;
+  }
+  .fa-steam {
+    left: 60%;
+    top: 74%;
+  }
+  .fa-vk {
+    left: 40%;
+    top: 74%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .video-bg__content {
+    font-size: 60%;
+  }
+  .fa-telegram {
+    left: 50%;
+    top: 74%;
+  }
+  .fa-steam {
+    left: 65%;
+    top: 74%;
+  }
+  .fa-vk {
+    left: 35%;
+    top: 74%;
+  }
+}
+@media screen and (max-width: 412px) {
+  .video-bg__content {
+    font-size: 65%;
+  }
+  .fa-telegram {
+    left: 50%;
+    top: 74%;
+  }
+  .fa-steam {
+    left: 65%;
+    top: 74%;
+  }
+  .fa-vk {
+    left: 35%;
+    top: 74%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .video-bg__content {
+    font-size: 50%;
+  }
+  .fa-telegram {
+    left: 50%;
+    top: 74%;
+  }
+  .fa-steam {
+    left: 65%;
+    top: 74%;
+  }
+  .fa-vk {
+    left: 35%;
+    top: 74%;
+  }
+}
